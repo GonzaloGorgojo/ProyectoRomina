@@ -84,7 +84,7 @@ label {
 
 @media only screen and (max-width: 500px) {
   #contenedor {
-    height: 50vh;
+    height: 80vh;
     width: 100vw;
     background-color: grey;
     display: flex;
@@ -97,27 +97,25 @@ label {
   }
   
   #titulo {
-    width: 30vw;
+    width: 40vw;
     height: 30vh;
     margin-left: 7vw;
-    margin-top: 10vh;
+    margin-top: 30vh;
     color: white;
-    
   }
   
   #titulo h1 {
     margin-bottom: 1vh;
-    font-size: 2.3rem;
-     
+    font-size: 2.8rem;
   }
   
   #titulo hr {
-    width: 4vw;
+    width: 8vw;
     margin-bottom: 1vh;
   }
   
   #titulo p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-family: "helvetica neue", sans-serif;
     
   }
@@ -127,10 +125,11 @@ label {
     text-align: none;
     padding: 0;
     height: 45vh;
-    width: 50vw;
-    margin-left: 1vw;
-    margin-top: 1vh;
+    width: 40vw;
+    margin-left: 6vw;
+    margin-top: 4vh;
     display: block;
+    color: white;
   }
   label {
       height: 7vh;
@@ -138,18 +137,20 @@ label {
       cursor: pointer;
       align-items: center;
       margin:0;
+
   }
   .menu {
       display: none;
       height: 41vh;
       width: 22vw;
-      margin: 7vw 0 0 20.5vw;
+      margin: 7vw 0 0 10vw;
+
   }
   .menu a {
       height:10vh;
       display: flex;
       border-bottom: 1px solid #EAEAEB;
-      color: black;
+      color: white;
       font-size: 1rem;
       width: 22vw;
       align-items: center;
@@ -175,7 +176,6 @@ label {
 
 #contenedorProyectos {
   height: 50vh;
-  background-color: grey;
   display: flex;
   background: linear-gradient(to left, #e66465, #9198e5);
 }
@@ -187,7 +187,6 @@ label {
   transform: rotate(270deg);
   margin: 11vh 0 0 1vw;
   font-size: 1.2rem;
-
 }
 
 #contenedorProyectos_imagenes {
@@ -211,10 +210,42 @@ label {
 }
 /* Parte Proyectos Responsive */
 @media only screen and (max-width: 500px) {
-  #contenedorServicios{
-    display: none;
-  }
   #contenedorProyectos {
-    display: none;
+    height: 140vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, #e66465, #9198e5);
+  }
+  
+  #contenedorProyectos h4 {
+    width: 35vw;
+    height: 3vh;
+    color: white;
+    transform: none;
+    margin: 5vh 0 0vh 12vw;
+    font-size: 1.1rem;  
+  }
+  
+  #contenedorProyectos_imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 120vh;
+  }
+  .imagenesProyectos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70.1vw;
+    height: 35vh;
+  }
+  
+  .imagenesProyectos img {
+    margin: 0 0  0 1px;
+    border: 0.1px solid white;
+    width: 22.9vw;
+    height: 11.6vh;
   }
  }
