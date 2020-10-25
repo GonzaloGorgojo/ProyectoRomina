@@ -14,7 +14,7 @@
 
 /* Parte del titulo*/
 #linea{
-  margin-left: 4.5vw;
+  margin-left: 6vw;
   margin-top: 10vh;
   height: 35vh;
   border: solid white 1px;
@@ -185,8 +185,9 @@ label {
   height: 5vh;
   color: white;
   transform: rotate(270deg);
-  margin: 11vh 0 0 1vw;
+  margin: 11vh 0 0 3vw;
   font-size: 1.2rem;
+  font-weight: 200;
 }
 
 #contenedorProyectos_imagenes {
@@ -212,7 +213,6 @@ label {
 @media only screen and (max-width: 500px) {
   #contenedorProyectos {
     height: 140vh;
-    background-color: grey;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to left, #e66465, #9198e5);
@@ -223,8 +223,9 @@ label {
     height: 3vh;
     color: white;
     transform: none;
-    margin: 5vh 0 0vh 12vw;
-    font-size: 1.1rem;  
+    margin: 6vh 0 0vh 12vw;
+    font-size: 1.1rem; 
+    font-weight: 200; 
   }
   
   #contenedorProyectos_imagenes {
@@ -232,7 +233,7 @@ label {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
+    width: 95vw;
     height: 120vh;
   }
   .imagenesProyectos {
@@ -249,3 +250,136 @@ label {
     height: 11.6vh;
   }
  }
+
+ /* Parte Nosotros */
+ #contenedorNosotros {
+  height: 100vh;
+}
+
+/* Parte Contacto */
+#contenedorContacto {
+  height: 50vh;
+  display: flex;
+  background: linear-gradient(to left, #e66465, #9198e5);
+}
+ /* Parte Contacto titulo */
+#contenedorContacto h4 {
+  width: 7vw;
+  height: 5vh;
+  color: white;
+  transform: rotate(270deg);
+  margin: 11vh 0 0 3vw;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+ /* Parte Contacto formulario */
+#contenedorContacto form {
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 30vh;
+  margin: 10vh 0vw 0vw 3vw;
+  width: 40vw;
+  padding: 18px;
+}
+#contenedorContacto #nombre {
+  width: 17.8vw;
+  border: 0.1rem solid rgb(63, 60, 60);
+  margin-right: 1vw;
+  margin-bottom: 2vh;
+  height: 4vh;
+  padding-left: 0.5vw;
+}
+#contenedorContacto #email {
+  width: 17.8vw;
+  border: 0.1rem solid rgb(63, 60, 60);
+  margin-bottom: 2vh;
+  float: right;
+  height: 4vh;
+  padding-left: 0.5vw;
+}
+#contenedorContacto #textoEnviado {
+  border: 0.1rem solid rgb(63, 60, 60);
+  width: 37.1vw;
+  height: 12vh;
+  resize: none;
+  padding: 0.5vw;
+}
+#contenedorContacto #botonEnviar {
+  width: 17.8vw;
+  border: 0.1rem solid rgb(63, 60, 60);
+  margin-top: 2vh;
+  float: right;
+  background-color: black;
+  color: white;
+  height: 4vh;
+  font-weight: 750;
+}
+
+/* Parte Contacto responsive */
+@media only screen and (max-width: 500px){
+  #contenedorContacto {
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, #e66465, #9198e5);
+  }
+   /* Parte Contacto titulo responsive*/
+  #contenedorContacto h4 {
+    width: 35vw;
+    height: 3vh;
+    color: white;
+    transform: none;
+    margin: 6vh 0 0vh 12vw;
+    font-size: 1.1rem; 
+    font-weight: 200; 
+  }
+   /* Parte Contacto formulario responsive */
+  #contenedorContacto form {
+    border: 2px solid black;
+    border-radius: 2px;
+    height: 52vh;
+    margin: 2vh 0vw 0vw 10vw;
+    width: 80vw;
+    padding: 3.5vw;
+  }
+  #contenedorContacto #nombre {
+    width: 71vw;
+    border: 0.1rem solid rgb(63, 60, 60);
+    margin-right: 0vw;
+    margin-bottom: 2.5vh;
+    height: 5vh;
+    padding-left: 2vw;
+  }
+  #contenedorContacto #email {
+    width: 71vw;
+    border: 0.1rem solid rgb(63, 60, 60);
+    margin-bottom: 2.5vh;
+    float: left;
+    height: 5vh;
+    padding-left: 2vw;
+  }
+  #contenedorContacto #textoEnviado {
+    border: 0.1rem solid rgb(63, 60, 60);
+    width: 71vw;
+    height: 24vh;
+    resize: none;
+    padding: 2vw;
+  }
+  #contenedorContacto #botonEnviar {
+    width: 71vw;
+    border: 0.1rem solid rgb(63, 60, 60);
+    margin-top: 2.5vh;
+    float: right;
+    background-color: black;
+    color: white;
+    height: 5vh;
+    font-weight: 750;
+    border-radius: 2px;
+  }
+
+}
+
+footer{
+  height: 8vh;
+  background-color: black;
+}
