@@ -13,10 +13,10 @@ $message .= "Su e-mail es: " . $mail . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'gongorgojo@gmail.com';
+$para = '-@gmail.com';
 $asunto = 'Consulta Raw Reality';
 
 mail($para, $asunto, utf8_decode($message), $header);
-
+echo "<script>alert('Correo Enviado Exitosamente')<script>";
 header("Location:index.html");
 ?>
