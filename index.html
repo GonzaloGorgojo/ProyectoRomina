@@ -77,10 +77,10 @@
 
     <div id="contenedorContacto">
       <h4>Contacto</h4>
-      <form action="mailto:gongorgojo@gmail.com" method="POST">
-        <input type="text" id="nombre" placeholder="Nombre" />
-        <input type="email" id="email" placeholder="Mail" /><br />
-        <textarea id="textoEnviado" placeholder="Escribinos.."></textarea><br />
+      <form action="enviar.php" method="POST">
+        <input type="text" name="name" id="name" class="name" placeholder="Nombre" />
+        <input type="email" name="mail" id="mail" class="email" placeholder="Mail"/><br />
+        <textarea name="message" class="message" placeholder="Escribinos.. " id="message"></textarea><br />
         <input id="botonEnviar" type="submit" value="Enviar" />
       </form>
     </div>

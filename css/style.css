@@ -282,7 +282,7 @@ label {
   width: 40vw;
   padding: 18px;
 }
-#contenedorContacto #nombre {
+#contenedorContacto #name {
   width: 17.8vw;
   border: 0.1rem solid rgb(63, 60, 60);
   margin-right: 1vw;
@@ -290,7 +290,7 @@ label {
   height: 4vh;
   padding-left: 0.5vw;
 }
-#contenedorContacto #email {
+#contenedorContacto #mail {
   width: 17.8vw;
   border: 0.1rem solid rgb(63, 60, 60);
   margin-bottom: 2vh;
@@ -298,7 +298,7 @@ label {
   height: 4vh;
   padding-left: 0.5vw;
 }
-#contenedorContacto #textoEnviado {
+#contenedorContacto #message {
   border: 0.1rem solid rgb(63, 60, 60);
   width: 37.1vw;
   height: 12vh;
@@ -343,7 +343,7 @@ label {
     width: 80vw;
     padding: 3.5vw;
   }
-  #contenedorContacto #nombre {
+  #contenedorContacto #name {
     width: 71vw;
     border: 0.1rem solid rgb(63, 60, 60);
     margin-right: 0vw;
@@ -351,7 +351,7 @@ label {
     height: 5vh;
     padding-left: 2vw;
   }
-  #contenedorContacto #email {
+  #contenedorContacto #mail {
     width: 71vw;
     border: 0.1rem solid rgb(63, 60, 60);
     margin-bottom: 2.5vh;
@@ -359,7 +359,7 @@ label {
     height: 5vh;
     padding-left: 2vw;
   }
-  #contenedorContacto #textoEnviado {
+  #contenedorContacto #message {
     border: 0.1rem solid rgb(63, 60, 60);
     width: 71vw;
     height: 24vh;
