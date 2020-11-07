@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Raw Reality</title>
   </head>
   <body>
@@ -24,51 +25,79 @@
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" />
         <div class="menu">
-          <a href="#contenedorServicios">Servicios</a>
-          <a href="#contenedorProyectos">Proyectos</a>
-          <a href="#contenedorNosotros">Nosotros</a>
-          <a href="#contenedorContacto">Contacto</a>
+          <a href="#contenedorServicios" class="scroll">Servicios</a>
+          <a href="#contenedorProyectos" class="scroll">Proyectos</a>
+          <a href="#contenedorNosotros" class="scroll">Nosotros</a>
+          <a href="#contenedorContacto" class="scroll">Contacto</a>
         </div>
       </div>
     </div>
 
-    <div id="contenedorServicios"></div>
+    <div id="contenedorServicios">
+      <h4>Servicios</h4>
+      <div id="contenedorServicios_tarjetas">
+        <div id="comunity">
+          <h3 id="comunity_titulo">Community<br>Management</h3>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+        </div>
+        <div id="comunity_lineas"></div>
+        <div id="branding">
+          <h3 id="branding_titulo">Branding</h3>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+        </div>
+        <div id="branding_lineas"></div>
+        <div id="comunicacion">
+          <h3 id="comunicacion_titulo">Comunicacion<br>estratégica</h3>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+        </div>
+        <div id="comunicacion_lineas"></div>
+      </div>
+    </div>
 
     <div id="contenedorProyectos">
       <h4>Proyectos</h4>
       <div id="contenedorProyectos_imagenes">
-        <div class="imagenesProyectos">
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
+        <div class="imagenesProyectos1" data-aos="fade-right">
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
         </div>
-        <div class="imagenesProyectos">
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
+        <div class="imagenesProyectos2" data-aos="zoom-in">
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
         </div>
-        <div class="imagenesProyectos">
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
-          <img src="imgs/ig.png" alt="" />
+        <div class="imagenesProyectos3" data-aos="fade-left">
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
+          <img src="imgs/ig.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -77,14 +106,37 @@
 
     <div id="contenedorContacto">
       <h4>Contacto</h4>
-      <form action="enviar.php" method="post">
-        <input type="text" name="name" id="name" class="name" placeholder="Nombre" required/>
-        <input type="email" name="mail" id="mail" class="email" placeholder="Mail" required/><br />
-        <textarea name="message" class="message" placeholder="Escribinos.. " id="message" required></textarea><br />
+      <form action="enviar.php" method="post" data-aos="fade-right">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="name"
+          placeholder="Nombre"
+          required
+        />
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          class="email"
+          placeholder="Mail"
+          required
+        /><br />
+        <textarea
+          name="message"
+          class="message"
+          placeholder="Escribinos.. "
+          id="message"
+          required
+        ></textarea
+        ><br />
         <input id="botonEnviar" type="submit" value="Enviar" />
       </form>
     </div>
 
     <footer></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

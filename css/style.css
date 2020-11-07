@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 /* Parte Titulo*/
 #contenedor {
@@ -170,8 +169,297 @@ label {
 
 #contenedorServicios {
   height: 50vh;
+  display: flex;
 }
 
+#contenedorServicios h4 {
+  width: 7vw;
+  height: 5vh;
+  color: #9198e5;
+  transform: rotate(270deg);
+  margin: 11vh 0 0 3vw;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+#contenedorServicios_tarjetas {
+  width: 95vw;
+  height: 50vh;
+}
+
+#comunity{
+  padding: 20px;
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid rgb(85, 81, 81);
+  border-radius: 3px;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+  top: 9vh;
+  left: 3vw;
+}
+#comunity::after{
+  content: "";
+  display: block;
+  width: 0.5vw;
+  height: 8vh;
+  background-color:#9198e5;
+  position: relative;
+  top: -29.5vh;
+  left: 16.5vw;
+}
+#comunity_lineas {
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid #9198e5;
+  border-radius: 3px;
+  background-color: white;
+  position: relative;
+  left: 4vw;
+  top: -18vh;
+}
+#comunity_titulo {
+  height: 10vh;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: rgb(71, 66, 66);
+  width: 15vw;
+  margin-bottom: 1.5vh;
+}
+
+#branding{
+  padding: 20px;
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid  rgb(85, 81, 81);
+  border-radius: 3px;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  top: -51vh;
+  left: 30vw;
+}
+#branding::after{
+  content: "";
+  display: block;
+  width: 0.5vw;
+  height: 8vh;
+  background-color:#9198e5;
+  position: relative;
+  top: -29.5vh;
+  left: 16.5vw;
+}
+#branding_lineas {
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid #9198e5;
+  border-radius: 3px;
+  position: relative;
+  left: 31vw;
+  top: -78vh;
+}
+#branding_titulo {
+  height: 10vh;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: rgb(71, 66, 66);
+  width: 15vw;
+  margin-bottom: 1.5vh;
+}
+
+#comunicacion{
+  padding: 20px;
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid  rgb(85, 81, 81);
+  border-radius: 3px;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  top: -111vh;
+  left: 57vw;
+}
+#comunicacion::after{
+  content: "";
+  display: block;
+  width: 0.5vw;
+  height: 8vh;
+  background-color:#9198e5;
+  position: relative;
+  top: -29.5vh;
+  left: 16.5vw;
+}
+#comunicacion_lineas {
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid #9198e5;
+  border-radius: 3px;
+  background-color: white;
+  position: relative;
+  left: 58vw;
+  top: -138vh;
+}
+#comunicacion_titulo {
+  height: 10vh;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: rgb(71, 66, 66);
+  width: 15vw;
+  margin-bottom: 1.5vh;
+}
+/* Parte Servicios Mobile */
+
+@media only screen and (max-width: 500px) {
+  #contenedorServicios {
+    width: auto;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contenedorServicios h4 {
+    width: 35vw;
+    height: 3vh;
+    color: #9198e5;
+    transform: none;
+    margin: 6vh 0 0vh 12vw;
+    font-size: 1.1rem; 
+    font-weight: 200; 
+  }
+  
+  #contenedorServicios_tarjetas {
+    width: 95vw;
+    height: 140vh;
+    margin-left: 2.5vw;
+  }
+  
+  #comunity{
+    padding: 20px;
+    height: 30vh;
+    width: 70vw;
+    border: 2px solid rgb(85, 81, 81);
+    border-radius: 3px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    top: 5vh;
+    left: 10vw;
+  }
+  #comunity::after{
+    content: "";
+    display: block;
+    width: 2vw;
+    height: 8vh;
+    background-color:#9198e5;
+    position: relative;
+    top: -29.5vh;
+    left: 54vw;
+  }
+  #comunity_lineas {
+    height: 30vh;
+    width: 70vw;
+    border: 2px solid #9198e5;
+    border-radius: 3px;
+    position: relative;
+    left: 14vw;
+    top: -22vh;
+  }
+  #comunity_titulo {
+    height: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: rgb(71, 66, 66);
+    width: 15vw;
+    margin-bottom: 1.5vh;
+  }
+  
+  #branding{
+    padding: 20px;
+    height: 30vh;
+    width: 70vw;
+    border: 2px solid rgb(85, 81, 81);
+    border-radius: 3px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    top: -12vh;
+    left: 10vw;
+  }
+  #branding::after{
+    content: "";
+    display: block;
+    width: 2vw;
+    height: 8vh;
+    background-color:#9198e5;
+    position: relative;
+    top: -29.5vh;
+    left: 54vw;
+  }
+  #branding_lineas {
+    height: 30vh;
+    width: 70vw;
+    border: 2px solid #9198e5;
+    border-radius: 3px;
+    position: relative;
+    left: 14vw;
+    top: -39vh;
+  }
+  #branding_titulo {
+    height: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: rgb(71, 66, 66);
+    width: 15vw;
+    margin-bottom: 1.5vh;
+  }
+  
+  #comunicacion{
+    padding: 20px;
+    height: 30vh;
+    width: 70vw;
+    border: 2px solid rgb(85, 81, 81);
+    border-radius: 3px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    top: -29vh;
+    left: 10vw;
+  }
+  #comunicacion::after{
+    content: "";
+    display: block;
+    width: 2vw;
+    height: 8vh;
+    background-color:#9198e5;
+    position: relative;
+    top: -29.5vh;
+    left: 54vw;
+  }
+  #comunicacion_lineas {
+    height: 30vh;
+    width: 70vw;
+    border: 2px solid #9198e5;
+    border-radius: 3px;
+    position: relative;
+    left: 14vw;
+    top: -56vh;
+  }
+  #comunicacion_titulo {
+    height: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: rgb(71, 66, 66);
+    width: 15vw;
+    margin-bottom: 1.5vh;
+  }
+ }
 
 /* Parte Proyectos */
 
@@ -197,21 +485,49 @@ label {
   align-items: center;
   width: 95vw;
 }
-.imagenesProyectos {
+.imagenesProyectos1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 19.9vw;
+  height: 33vh;
+}
+.imagenesProyectos2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 19.9vw;
+  height: 33vh;
+}
+.imagenesProyectos3 {
   display: flex;
   flex-wrap: wrap;
   width: 19.9vw;
   height: 33vh;
 }
 
-.imagenesProyectos img {
+.imagenesProyectos1 img {
   margin: 0 0  0 1px;
   border: 1px solid white;
   width: 6.5vw;
   height: 11vh;
   background-color: white;
 }
+.imagenesProyectos2 img {
+  margin: 0 0  0 1px;
+  border: 1px solid white;
+  width: 6.5vw;
+  height: 11vh;
+  background-color: white;
+}
+.imagenesProyectos3 img {
+  margin: 0 0  0 1px;
+  border: 1px solid white;
+  width: 6.5vw;
+  height: 11vh;
+  background-color: white;
+}
+
 /* Parte Proyectos Responsive */
+
 @media only screen and (max-width: 500px) {
   #contenedorProyectos {
     height: 140vh;
@@ -237,15 +553,40 @@ label {
     align-items: center;
     width: 95vw;
     height: 120vh;
+    margin-top: 4vh;
   }
-  .imagenesProyectos {
+  .imagenesProyectos1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70.1vw;
+    height: 35vh;
+  }
+  .imagenesProyectos2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70.1vw;
+    height: 35vh;
+  }
+  .imagenesProyectos3 {
     display: flex;
     flex-wrap: wrap;
     width: 70.1vw;
     height: 35vh;
   }
   
-  .imagenesProyectos img {
+  .imagenesProyectos1 img {
+    margin: 0 0  0 1px;
+    border: 0.1px solid white;
+    width: 22.9vw;
+    height: 11.6vh;
+  }
+  .imagenesProyectos2 img {
+    margin: 0 0  0 1px;
+    border: 0.1px solid white;
+    width: 22.9vw;
+    height: 11.6vh;
+  }
+  .imagenesProyectos3 img {
     margin: 0 0  0 1px;
     border: 0.1px solid white;
     width: 22.9vw;
@@ -283,6 +624,7 @@ label {
   width: 40vw;
   padding: 18px;
 }
+
 #contenedorContacto #name {
   width: 17.8vw;
   border: 0.1rem solid rgb(63, 60, 60);
@@ -320,7 +662,7 @@ label {
 /* Parte Contacto responsive */
 @media only screen and (max-width: 500px){
   #contenedorContacto {
-    height: 140vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to left, #e66465, #9198e5);
@@ -340,7 +682,7 @@ label {
     border: 2px solid black;
     border-radius: 2px;
     height: 52vh;
-    margin: 2vh 0vw 0vw 10vw;
+    margin: 4vh 0vw 0vw 10vw;
     width: 80vw;
     padding: 3.5vw;
   }
