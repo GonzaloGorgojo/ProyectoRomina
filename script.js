@@ -23,7 +23,3 @@ function scrollAnchors(e, respond = null) {
 		}
 	}, 100);
 }
-
-AOS.init({
-    duration: 1200,
-  })

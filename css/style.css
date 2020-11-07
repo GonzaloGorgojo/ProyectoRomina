@@ -183,8 +183,9 @@ label {
 }
 
 #contenedorServicios_tarjetas {
-  width: 95vw;
+  width: 80vw;
   height: 50vh;
+  margin-left: 4vw;
 }
 
 #comunity{
